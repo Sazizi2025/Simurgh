@@ -2,7 +2,7 @@
 
 This is the site that I wrote the source for my client!
 
-# 🌱 : Simurgh WebSite
+# 🌱 : Simurgh WebSite (it is not complete)
 Well, Simorgh is an unofficial institution that does different things, I don't think any further explanation is necessary!
 
 ## ✨: What I give you!
