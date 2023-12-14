@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="سیمرغ, simurgh, استادیو, گیم, بازی, شیعه, جامعه, اسلام, انقلابی, مذهبی" />
+  <meta name="description" content="سیمرغ جامعه ای  فرهنگی متمرکز بر روی مسلمانان شیعه میباشد. هدف ما از تاسیس سیمرغ، فراهم سازی  فضای امن و دوستانه و درعین حال حمایت از هنرمندان انقلابی فارق از عرصه فعالیتشان می باشد." />
+  <meta name="author" content="Simurgh" />
+  <meta name="robots" content="index,follow" />
+  <meta name="revisit-after" content="1 day" />
+  <link rel="shortcut icon" href="images/Simurgh-web.png" type="image/x-icon" />
+  <!--oges-->
+  <meta property="og:description" content="سیمرغ جامعه ای  فرهنگی متمرکز بر روی مسلمانان شیعه میباشد. هدف ما از تاسیس سیمرغ، فراهم سازی  فضای امن و دوستانه و درعین حال حمایت از هنرمندان انقلابی فارق از عرصه فعالیتشان می باشد." data-react-helmet="true">
+  <meta content=" جامعه سیمرغ " property="og:title" />
+  <meta content="https://www.fa.simurghiran.ir/" property="og:url" />
+  <meta content="https://s6.uupload.ir/files/simurgh-web_r8t3.png" property="og:image" />
+  <meta content="#000000" data-react-helmet="true" name="theme-color" />
+  <meta name="twitter:card" content="summary_large_image">
+
+  <base target="_blank" />
+
+  <title> جامعه سیمرغ </title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link href="css/fontiran.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Sign Up Form -->
+    <form action="php/sign-up.php" method="post" onsubmit="return validatePassword()" class="sign-up">
+        شماره موبایل: <input type="text" name="mobile" required><br>
+        نام کاربری: <input type="text" name="username" required><br>
+        رمز عبور: <input type="password" name="password" pattern="[A-Za-z0-9@#]+" required id="password"><br>
+        تکرار رمز عبور: <input type="password" name="confirm_password" required id="confirm_password"><br>
+        <input type="submit" value="ثبت نام">
+    </form>
+
+    <script>
+    function validatePassword(){
+        var password = document.getElementById("password").value;
+        var confirm_password = document.getElementById("confirm_password").value;
+        if(password != confirm_password) {
+            alert("رمزهای عبور مطابقت ندارند. لطفاً دوباره تلاش کنید.");
+        return false;
+        }
+    return true;
+    }
+</script>
+    
+</body>

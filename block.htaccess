@@ -1,0 +1,29 @@
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^(AF|IR|IQ|YE|LB|RU|SY|CN|PS)$
+RewriteRule ^(.*)$ - [F,L]
+
+RewriteEngine on
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(AF|IR)$
+RewriteRule ^(.*)$ https://www.fa.simurgh.ir/$1 [L]
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(CN|RU|PS)$
+RewriteRule ^(.*)$ https://www.en.simurgh.ir/$1 [L]
+RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^(IQ|YE|LB|SY)$
+RewriteRule ^(.*)$ https://www.ar.simurgh.ir/$1 [L]
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/$ $1.php
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/$ $1.html
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /AR
+
+Sitemap: https://www.simurgh.ir/sitemap.xml
